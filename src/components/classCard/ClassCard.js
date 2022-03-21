@@ -5,7 +5,7 @@ function ClassCard(singleClass) {
     const [fullClass, setFullClass] = useState([]);
 
     useEffect(() => {
-        fetch(`http://localhost:3001/api/classes/${singleClass.classInfo.id}`)
+        fetch(`https://employment-curriculum-be.herokuapp.com/api/classes/${singleClass.classInfo.id}`)
         .then((response) => response.json())
         .then((data) => {
             setFullClass(data)

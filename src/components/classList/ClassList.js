@@ -10,7 +10,7 @@ function ClassList() {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        fetch("http://localhost:3001/api/classes/all")
+        fetch("https://employment-curriculum-be.herokuapp.com/api/classes/all")
         .then(response => response.json())
         .then(data => {
                 console.log(data)
